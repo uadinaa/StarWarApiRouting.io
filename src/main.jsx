@@ -9,20 +9,24 @@ import CharacterDetails from './pages/CharacterDetails.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+    [
+        {
+            path: '/',
+            element: <App />,
+            children: [
+                { path: '/', element: <Home /> },
+                { path: '/products', element: <CardList /> },
+                { path: '/products/:id', element: <CharacterDetails /> },
+                { path: '/create-product', element: <CreatingCard /> }
+            ],
+        },
+        { path: '*', element: <NotFoundPage /> },
+    ],
     {
-        path: '/',
-        element: <App />,
-        children:[
-            {path: '/', element: <Home />},
-            {path: '/products', element: <CardList />},
-            {path: '/products/:id', element: <CharacterDetails />},
-            {path: '/create-product', element: <CreatingCard />}
-        ],
-    },
-    {path: '*', element: <NotFoundPage/>},
-]);
-
+        basename: "/StarWarApiRouting.io",
+    }
+);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
