@@ -1,0 +1,34 @@
+.character-name {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #8230bd;
+}
+
+.back-button {
+    background: #f8e6e6;
+    border: 2px solid #cebed8;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #0c0213;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background: #cebed8;
+}
+
+.character-details {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fdf1f1;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #cebed8;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,44 @@
+.creating-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8e6e6;
+    border: 1px solid #cebed8;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 400px;
+    margin: 20px auto;
+}
+
+.creating-card input {
+    padding: 10px;
+    border: 2px solid #cebed8;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+    color: #0c0213;
+}
+
+.creating-card input:focus {
+    border-color: #cebed8;
+    box-shadow: 0 0 4px rgba(130, 48, 189, 0.4);
+}
+
+.creating-card .submitButton {
+    padding: 10px 20px;
+    background: #fbeeee;
+    color: #0c0213;
+    border: 2px solid #cebed8;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+.creating-card .submitButton:hover {
+    background: #cebed8;
+}
